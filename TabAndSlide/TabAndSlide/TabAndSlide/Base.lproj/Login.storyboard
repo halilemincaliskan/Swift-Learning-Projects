@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="r8k-IK-7RU">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="PressStart2P-Regular.ttf">
+            <string>PressStart2P-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Login-->
+        <scene sceneID="gki-86-dzk">
+            <objects>
+                <navigationController id="r8k-IK-7RU" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Login" image="user-solid" id="ZhV-XZ-enb"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="xkz-x2-Fak">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="PressStart2P-Regular" family="Press Start 2P" pointSize="20"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <fontDescription key="fontDescription" name="PressStart2P-Regular" family="Press Start 2P" pointSize="20"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="eYI-6K-0h4" kind="relationship" relationship="rootViewController" id="iP4-p7-soI"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ecr-w0-H74" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-225" y="35"/>
+        </scene>
+        <!--Login-->
+        <scene sceneID="VfS-Is-tnt">
+            <objects>
+                <viewController id="eYI-6K-0h4" customClass="LoginViewController" customModule="TabAndSlide" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9TI-mI-RLh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="9E2-Oe-aOU">
+                                <rect key="frame" x="96" y="322.5" width="222" height="251"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yxm-4Q-jaW">
+                                        <rect key="frame" x="43" y="0.0" width="136" height="17"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="17" id="ZXz-aQ-rCc"/>
+                                            <constraint firstAttribute="width" constant="136" id="fy3-Fj-nJo"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="PressStart2P-Regular" family="Press Start 2P" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="u0z-OM-1xR">
+                                        <rect key="frame" x="0.5" y="43" width="221" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="34" id="ODJ-cd-AKr"/>
+                                            <constraint firstAttribute="width" constant="221" id="nTx-iH-8k2"/>
+                                        </constraints>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="PressStart2P-Regular" family="Press Start 2P" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bPL-3y-dPm">
+                                        <rect key="frame" x="43" y="103" width="136" height="17"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="17" id="I5X-73-Mfh"/>
+                                            <constraint firstAttribute="width" constant="136" id="VEP-3b-fzi"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="PressStart2P-Regular" family="Press Start 2P" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Oia-9o-bWT">
+                                        <rect key="frame" x="0.5" y="146" width="221" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="221" id="8RQ-UA-SPj"/>
+                                            <constraint firstAttribute="height" constant="34" id="A99-nZ-MpG"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="PressStart2P-Regular" family="Press Start 2P" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="94V-Ry-Ull">
+                                        <rect key="frame" x="0.0" y="206" width="222" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="94c-z4-5QC"/>
+                                            <constraint firstAttribute="width" constant="222" id="diL-cC-o5I"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Login" cornerStyle="capsule">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" name="AccentColor"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" name="PressStart2P-Regular" family="Press Start 2P" pointSize="17"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="buttonClick:" destination="eYI-6K-0h4" eventType="touchUpInside" id="tVT-fy-4jc"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Kph-sY-eu3"/>
+                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                        <constraints>
+                            <constraint firstItem="9E2-Oe-aOU" firstAttribute="centerX" secondItem="9TI-mI-RLh" secondAttribute="centerX" id="LDw-Bl-t3s"/>
+                            <constraint firstItem="9E2-Oe-aOU" firstAttribute="centerY" secondItem="9TI-mI-RLh" secondAttribute="centerY" id="QZr-Jz-fhq"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Login" id="GVY-Fk-qxC"/>
+                    <connections>
+                        <outlet property="loginButton" destination="94V-Ry-Ull" id="hUX-qd-Gwb"/>
+                        <outlet property="passwordLabel" destination="bPL-3y-dPm" id="gnj-zv-xwQ"/>
+                        <outlet property="passwordTextField" destination="Oia-9o-bWT" id="F9w-k7-Wei"/>
+                        <outlet property="usernameLabel" destination="yxm-4Q-jaW" id="DvO-bo-d5Q"/>
+                        <outlet property="usernameTextField" destination="u0z-OM-1xR" id="7Ru-Wb-T29"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NYP-U2-9w5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="611.59420289855075" y="34.821428571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="user-solid" width="22" height="22"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

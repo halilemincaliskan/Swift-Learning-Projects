@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gzg-Fz-A1R">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home-->
+        <scene sceneID="0hY-vs-dWz">
+            <objects>
+                <navigationController id="gzg-Fz-A1R" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Home" image="house-solid" id="F3b-Nz-35Y"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bJc-4Z-CgC">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="PressStart2P-Regular" family="Press Start 2P" pointSize="20"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <fontDescription key="fontDescription" name="PressStart2P-Regular" family="Press Start 2P" pointSize="20"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="oj8-Eh-spm" kind="relationship" relationship="rootViewController" id="sCW-cQ-bt4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FpB-NE-f71" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-226" y="46"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="rOc-zR-DhS">
+            <objects>
+                <viewController id="oj8-Eh-spm" customClass="HomeViewController" customModule="TabAndSlide" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0bN-c5-qcW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="QAR-CH-FvB">
+                                <rect key="frame" x="149" y="801" width="116" height="26"/>
+                            </pageControl>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FOJ-8T-gXl">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="0uT-Ye-zKN"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="FOJ-8T-gXl" firstAttribute="centerX" secondItem="0bN-c5-qcW" secondAttribute="centerX" id="2cq-C8-FW3"/>
+                            <constraint firstItem="FOJ-8T-gXl" firstAttribute="top" secondItem="0bN-c5-qcW" secondAttribute="top" id="5M5-q9-2mG"/>
+                            <constraint firstAttribute="bottom" secondItem="FOJ-8T-gXl" secondAttribute="bottom" id="ERC-qO-Pbq"/>
+                            <constraint firstItem="FOJ-8T-gXl" firstAttribute="trailing" secondItem="0uT-Ye-zKN" secondAttribute="trailing" id="OC2-n7-zCf"/>
+                            <constraint firstItem="FOJ-8T-gXl" firstAttribute="centerY" secondItem="0bN-c5-qcW" secondAttribute="centerY" id="bqI-UV-xm1"/>
+                            <constraint firstItem="QAR-CH-FvB" firstAttribute="centerY" secondItem="0bN-c5-qcW" secondAttribute="centerY" constant="366" id="ckc-x0-S8k"/>
+                            <constraint firstItem="QAR-CH-FvB" firstAttribute="centerX" secondItem="0bN-c5-qcW" secondAttribute="centerX" id="uZ8-wR-Wgy"/>
+                            <constraint firstItem="FOJ-8T-gXl" firstAttribute="leading" secondItem="0uT-Ye-zKN" secondAttribute="leading" id="vnd-2g-V9J"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Home" id="S30-KY-X7I"/>
+                    <connections>
+                        <outlet property="pageControl" destination="QAR-CH-FvB" id="O0q-fH-e7I"/>
+                        <outlet property="scrollView" destination="FOJ-8T-gXl" id="GBy-HB-s5J"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xpS-64-C1f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="624.63768115942037" y="45.535714285714285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="house-solid" width="22" height="22"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
